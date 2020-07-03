@@ -1,0 +1,22 @@
+
+Apply changes to a Pod 
+kubectl apply -f <filename> 
+
+Status of objects 
+kubectl get pods 
+
+minikube ip
+
+Detailed information about object 
+kubectl describe <object type> <object name> 
+
+Remove an object 
+kubectl delete -f <config file> 
+
+Configure terminal docker cli to use a docker server 
+eval $(minikube docker-env) 
+
+Create a secret 
+kubectl create secret <type> <secret_name> --from-literal key=value
+
+<type> generic, docker-registry, tls 
